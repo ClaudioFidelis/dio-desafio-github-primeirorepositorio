@@ -1,0 +1,40 @@
+<! -- dica: usar extensão vscode html live preview (ctrl+shift+p) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Display Flex</title>
+    <style>
+        .flex{
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid #000;
+            /*a propriedade abaixo faz com que os itens fiquem organizados in line*/
+            display: flex /*para melhor compreensão, retire essa linha e vera que os itens ficarão um sob o outro*/;
+        }
+
+        .item{
+            background-color: aqua;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <! -- digite div.item*3 e dê enter e automaticamente serão inseridas 3 divs com a classe item -->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <! -- se eu adicionar vários outros itens ele vai vazer em determinado momento e na próxima aula vamos aprender a tratar isso-->
+        <div class="item">Item 3</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 3</div>
+
+    </div>
+</body>
+</html>
