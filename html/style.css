@@ -1,9 +1,21 @@
 body {
     background-color: #ccc;
+    font-family: Verdana;
+
 }
 
 #title, .subtitle, .post_title {
     color: #000;
+}
+
+#title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: line-through;
+    color: rgb(56, 56, 56);
 }
 
 .photo {
@@ -24,6 +36,7 @@ body {
     border: 1px solid rgb(56, 56, 56);
     margin-bottom: 15px;
     border-radius: 5px;
+    text-transform: capitalize;
 }
 
 .post_content {
