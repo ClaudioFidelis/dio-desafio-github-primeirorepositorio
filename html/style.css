@@ -1,7 +1,8 @@
 body {
     background-color: #ccc;
     font-family: Verdana;
-
+    max-width: 900px; /*ajusta o conteúdo caso a margen seja diminuída (alterne entre width e max-width e redimensione a tela da esquerda pra direita pra testar)*/
+    margin: auto; /*centraliza o conteúdo ajustando a margem esquerda e direita de acordo com a tela (pode eliminar essa propriedade pra testar) */
 }
 
 #title, .subtitle, .post_title {
@@ -36,16 +37,18 @@ a {
     border: 1px solid rgb(56, 56, 56);
     margin-bottom: 15px;
     border-radius: 5px;
-    text-transform: capitalize;
 }
 
 .post_content {
     margin: 0;
     margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: justify;
 }
 
 .post_image {
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .contact_list {
