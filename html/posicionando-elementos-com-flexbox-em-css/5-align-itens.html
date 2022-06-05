@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos- Align-Itens</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color:white;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Row</h1>
+    <h1>Center</h1>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum doumas2</div>
+        <div class="item">agora vamos ver este testo3</div>
+    </section>
+
+    <h1>Stretch</h1>
+    <section class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2</div>
+        <div class="item">agora vamos ver este testo3</div>
+    </section>
+    <h1>Flex-Start</h1>
+    <section class="container start">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum doumas2lorem ipsum doumas2lorem</div>
+        <div class="item">agora vamos ver este testo3 ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2</div>
+    </section>
+    <h1>Flex-End</h1>
+    <section class="container end">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum doumas2lorem ipsum doumas2lorem</div>
+        <div class="item">agora vamos ver este testo3 ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2</div>
+    </section>
+    <h1>Baseline</h1>
+    <section class="container baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">lorem ipsum doumas2lorem ipsum doumas2lorem</div>
+        <div class="item">agora vamos ver este testo3 ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2</div>
+    </section>
+
+    <h1>Column</h1>
+    <h1>Flex-Start</h1>
+    <section class="container column start">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum doumas2lorem ipsum doumas2lorem</div>
+        <div class="item">agora vamos ver este testo3 ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2</div>
+    </section>
+    <h1>Flex-End</h1>
+    <section class="container column end">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum doumas2lorem ipsum doumas2lorem</div>
+        <div class="item">agora vamos ver este testo3 ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2</div>
+    </section>
+    <h1>Center</h1>
+    <section class="container column center">
+        <div class="item">item 1</div>
+        <div class="item">lorem ipsum doumas2lorem ipsum doumas2lorem</div>
+        <div class="item">agora vamos ver este testo3 ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2</div>
+    </section>
+    <h1>Baseline</h1>
+    <section class="container column baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">lorem ipsum doumas2lorem ipsum doumas2lorem</div>
+        <div class="item">agora vamos ver este testo3 ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2lorem ipsum doumas2</div>
+    </section>
+
+    <h1>Alinhamento Central à Tela</h1>
+    <section class="container central center">
+        <div class="item">It is a long established eader will be distracted by the readable content of a page when looking at</div>
+    </section>
+</body>
+</html>
